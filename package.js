@@ -1,14 +1,14 @@
 Package.describe({
-  name: "reactjs:react",
+  name: "nicksergeant:react",
   // TODO Consider using reactVersion here, since this version is a lot
   // less meaningful?
-  version: "0.2.4",
+  version: "0.2.5",
   summary: "React rendering for Meteor apps",
-  git: "https://github.com/reactjs/react-meteor/",
+  git: "https://github.com/nicksergeant/react-meteor/",
   documentation: "README.md"
 });
 
-var reactVersion = "0.13.0";
+var reactVersion = "0.13.3";
 
 Npm.depends({
   "react": reactVersion,
@@ -34,7 +34,7 @@ Package.onUse(function(api) {
     // be quite as small as the more aggressively minified version shipped
     // by Facebook, but we currently have no good way of including
     // different versions of files in development and production.
-    "vendor/react-with-addons-" + reactVersion + ".js",
+    "vendor/react-with-addons-" + reactVersion + ".min.js",
     "src/client-react.js"
   ], "client");
 

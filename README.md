@@ -1,6 +1,8 @@
 react-meteor
 ============
 
+#### NOTE: This fork (`nicksergeant/react-meteor`) uses the production version of React instead of the development version.
+
 This repository defines a Meteor package that automatically integrates the
 [React](http://facebook.github.io/react/) rendering framework on both the
 client and the server, to complement or replace the default Handlebars
