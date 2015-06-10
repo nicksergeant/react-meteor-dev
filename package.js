@@ -2,7 +2,7 @@ Package.describe({
   name: "nicksergeant:react",
   // TODO Consider using reactVersion here, since this version is a lot
   // less meaningful?
-  version: "0.2.5",
+  version: "0.2.6",
   summary: "React rendering for Meteor apps",
   git: "https://github.com/nicksergeant/react-meteor/",
   documentation: "README.md"
@@ -12,17 +12,6 @@ var reactVersion = "0.13.3";
 
 Npm.depends({
   "react": reactVersion,
-});
-
-Package.registerBuildPlugin({
-  name: "compileJSX",
-  use: [],
-  sources: [
-    "plugin/compile-jsx.js"
-  ],
-  npmDependencies: {
-    "react-tools": reactVersion
-  }
 });
 
 Package.onUse(function(api) {
