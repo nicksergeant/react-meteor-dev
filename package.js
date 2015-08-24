@@ -1,10 +1,10 @@
 Package.describe({
-  name: "nicksergeant:react",
+  name: "nicksergeant:react-dev",
   // TODO Consider using reactVersion here, since this version is a lot
   // less meaningful?
   version: "0.2.7",
-  summary: "React rendering for Meteor apps",
-  git: "https://github.com/nicksergeant/react-meteor/",
+  summary: "React rendering for Meteor apps - dev build.",
+  git: "https://github.com/nicksergeant/react-meteor-dev/",
   documentation: "README.md"
 });
 
@@ -23,7 +23,7 @@ Package.onUse(function(api) {
     // be quite as small as the more aggressively minified version shipped
     // by Facebook, but we currently have no good way of including
     // different versions of files in development and production.
-    "vendor/react-with-addons-" + reactVersion + ".min.js",
+    "vendor/react-with-addons-" + reactVersion + ".js",
     "src/client-react.js"
   ], "client");
 
